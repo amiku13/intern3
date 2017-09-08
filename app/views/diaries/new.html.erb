@@ -1,0 +1,18 @@
+<h1>新しい日記を作るわよ！</h1>
+
+<%= form_for @diary do |f| %>
+<div>
+<%= f.label '天気' %>
+<%= f.number_field :weather %>
+<%= f.label 'タイトル' %>
+<%= f.text_field :title %>
+<%= f.label '名前' %>
+<%= f.text_field :name %>
+<%= f.label '本文' %>
+<%= f.text_area :content %>
+<br>
+<%= f.submit "送信するわよ！"%>
+</div>
+<% end %>
+
+<%= link_to 'Back', diaries_path %>

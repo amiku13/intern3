@@ -1,0 +1,9 @@
+<% @diaries.each do |diary| %>
+<div>
+<td><%= diary.title %></td>
+<td><%= diary.name %></td>
+<td><%= diary.content %></td>
+</div>
+<% end %>
+
+<%= link_to '日記を作る', new_diary_path %>
